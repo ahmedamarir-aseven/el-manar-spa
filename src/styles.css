@@ -1,0 +1,174 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* El Manar Spa — Editorial Spa Design System
+ * Deep emerald + warm cream + soft blush + antique gold.
+ * All colors in oklch.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-glow: var(--primary-glow);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-gold: var(--gold);
+  --color-blush: var(--blush);
+  --color-cream: var(--cream);
+  --color-cream-dark: var(--cream-dark);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-soft: 0 10px 30px -12px color-mix(in oklab, var(--primary) 22%, transparent);
+  --shadow-elevated: 0 30px 60px -20px color-mix(in oklab, var(--primary) 28%, transparent);
+}
+
+:root {
+  --radius: 1.25rem;
+
+  /* Surfaces */
+  --background: oklch(0.972 0.012 95);          /* warm cream #f4f4ec */
+  --foreground: oklch(0.22 0.02 150);           /* deep ink */
+  --card: oklch(0.995 0.005 95);
+  --card-foreground: oklch(0.22 0.02 150);
+  --popover: oklch(0.995 0.005 95);
+  --popover-foreground: oklch(0.22 0.02 150);
+
+  /* Brand */
+  --primary: oklch(0.32 0.07 153);              /* deep emerald #0b4426 */
+  --primary-foreground: oklch(0.985 0.005 95);
+  --primary-glow: oklch(0.46 0.11 153);
+
+  --secondary: oklch(0.93 0.02 90);
+  --secondary-foreground: oklch(0.22 0.02 150);
+
+  --muted: oklch(0.93 0.015 90);
+  --muted-foreground: oklch(0.48 0.02 150);
+
+  --accent: oklch(0.86 0.06 35);                /* soft blush */
+  --accent-foreground: oklch(0.22 0.02 150);
+
+  /* Custom palette */
+  --gold: oklch(0.74 0.11 85);                  /* antique gold */
+  --blush: oklch(0.86 0.06 35);
+  --cream: oklch(0.972 0.012 95);
+  --cream-dark: oklch(0.91 0.02 85);
+  --ink: oklch(0.18 0.015 150);                 /* near-black ink */
+  --ink-soft: oklch(0.42 0.02 150);
+
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.985 0.005 95);
+
+  --border: oklch(0.88 0.02 90);
+  --input: oklch(0.93 0.015 90);
+  --ring: oklch(0.46 0.11 153);
+}
+
+.dark {
+  --background: oklch(0.18 0.015 150);
+  --foreground: oklch(0.96 0.01 95);
+  --card: oklch(0.22 0.02 150);
+  --card-foreground: oklch(0.96 0.01 95);
+  --popover: oklch(0.22 0.02 150);
+  --popover-foreground: oklch(0.96 0.01 95);
+  --primary: oklch(0.46 0.11 153);
+  --primary-foreground: oklch(0.985 0.005 95);
+  --primary-glow: oklch(0.6 0.13 153);
+  --secondary: oklch(0.28 0.02 150);
+  --secondary-foreground: oklch(0.96 0.01 95);
+  --muted: oklch(0.28 0.02 150);
+  --muted-foreground: oklch(0.72 0.02 150);
+  --accent: oklch(0.86 0.06 35);
+  --accent-foreground: oklch(0.22 0.02 150);
+  --gold: oklch(0.74 0.11 85);
+  --blush: oklch(0.86 0.06 35);
+  --cream: oklch(0.972 0.012 95);
+  --cream-dark: oklch(0.91 0.02 85);
+  --ink: oklch(0.96 0.01 95);
+  --ink-soft: oklch(0.78 0.015 150);
+  --destructive: oklch(0.7 0.19 22);
+  --destructive-foreground: oklch(0.985 0.005 95);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.6 0.13 153);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .font-serif    { font-family: var(--font-serif); }
+  .font-display  { font-family: var(--font-display); }
+  .font-sans     { font-family: var(--font-sans); }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  .text-balance { text-wrap: balance; }
+
+  .shadow-soft     { box-shadow: var(--shadow-soft); }
+  .shadow-elevated { box-shadow: var(--shadow-elevated); }
+
+  .gradient-emerald {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-glow) 100%);
+  }
+  .gradient-cream {
+    background: linear-gradient(180deg, var(--cream) 0%, color-mix(in oklab, var(--cream-dark) 60%, var(--cream)) 100%);
+  }
+
+  .mask-fade-y {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+            mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  }
+
+  .scroll-up   { animation: scrollUp 50s linear infinite; }
+  .scroll-down { animation: scrollDown 50s linear infinite; }
+}
+
+@keyframes scrollUp {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+@keyframes scrollDown {
+  0%   { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
