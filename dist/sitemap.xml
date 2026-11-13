@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage - French -->
+  <url>
+    <loc>https://elmanarspa.com/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elmanarspa.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarspa.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elmanarspa.com/" />
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://elmanarspa.com/images/heroback.jpg</image:loc>
+      <image:title>El Manar Spa - Massage à domicile Marrakech</image:title>
+      <image:caption>Soins bien-être et spa à domicile à Marrakech</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://elmanarspa.com/images/logo.png</image:loc>
+      <image:title>El Manar Spa Logo</image:title>
+    </image:image>
+  </url>
+
+  <!-- Services Section -->
+  <url>
+    <loc>https://elmanarspa.com/#services</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elmanarspa.com/#services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarspa.com/?lang=en#services" />
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Section -->
+  <url>
+    <loc>https://elmanarspa.com/#apropos</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elmanarspa.com/#apropos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarspa.com/?lang=en#apropos" />
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://elmanarspa.com/images/apropo.jpg</image:loc>
+      <image:title>El Manar - Thérapeute certifiée à Marrakech</image:title>
+      <image:caption>Votre experte bien-être à domicile</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Gallery Section -->
+  <url>
+    <loc>https://elmanarspa.com/#gallery</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elmanarspa.com/#gallery" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarspa.com/?lang=en#gallery" />
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Section -->
+  <url>
+    <loc>https://elmanarspa.com/#contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://elmanarspa.com/#contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarspa.com/?lang=en#contact" />
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
